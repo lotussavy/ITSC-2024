@@ -1,0 +1,14 @@
+Here, we have four excel-sheet files namely:
+    1. FinalLookupTable.xlsx: This file contain the information of the nine airports of the Florida which are: 
+        DAB, FLL, GNV, JAX, MCO, MIA, MLB, TLH and TPA.It has 9 columns: Date contain information related to which year,month,day,hour, minute and seconds
+        the information is about, Other hold the mean capability for that hour considering GA and MIL for both arrival and departure, Airport is the name of the airport and remaining columns are about the weather information.  Data are extracted from various sources which are:                                              For capacity of the airport link is https://aspm.faa.gov/tfms/sys/OPSNET.asp                          For weather data link is https://www.ncei.noaa.gov/access/search/data-search/global-hourly?pageNum=1 
+    
+    
+    2. CityPair.xlsx: 
+        This file contain  5 columns. Departure name of departure airport, arrival name of arrival airport, date, departure hour and arrival hour
+    
+    
+    3. combined_without_DAB.xlsx: It contain 41 columns. A1 to A30 gives the popularity, mean capability and standard deviation of the mean capability of the top ten destination airport, c is meancapability of the departure airport and S1 to S10 are the selection bits for the corresponding top ten destination airport where 1 means selected and 0 means rejected. Here we avoided the information of DAB airport so that our Dataset won’t contain any information regarding DAB which is used as the test case. This file is used as the training data for the neural network.
+    
+    
+    4. DAB.xlsx: This has same columns as the above excel-sheet only difference is that it contain the information of DAB airports only. It is used for testing the neural network
